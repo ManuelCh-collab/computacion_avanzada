@@ -61,7 +61,7 @@ Puedes hacer búsquedas por palabras clave (ej: buscar "Endesa" o "Mantenimiento
 Si tu empresa recibe 10 facturas al mes, puedes hacerlo a mano. Si recibe 1,000, necesitas un sistema como este. Este proyecto es la base para crear un sistema de gestión empresarial (ERP) o una app de finanzas personales que categoriza gastos automáticamente.
 
 ¿Cómo encaja el flujo de este proyecto?
-Captura: Tomas la foto (lo que hace tu código con Image.open).
+Captura: Tomas la foto
 
 Procesamiento: El motor "entiende" los caracteres (lo que hace pytesseract).
 
