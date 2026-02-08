@@ -1,0 +1,26 @@
+[
+    {
+        "numero_cuenta": "251702",
+        "nombre_cliente": "Manuel Chirivella",
+        "fecha_apertura": "2025-12-03",
+        "balance": 199800000000.0
+    },
+    {
+        "numero_cuenta": "996850",
+        "nombre_cliente": "angel mejias",
+        "fecha_apertura": "2025-12-06",
+        "balance": 900.0
+    },
+    {
+        "numero_cuenta": "917432",
+        "nombre_cliente": "jose perez",
+        "fecha_apertura": "2025-12-10",
+        "balance": 9890.0
+    },
+    {
+        "numero_cuenta": "311625",
+        "nombre_cliente": "javier",
+        "fecha_apertura": "2025-12-10",
+        "balance": 0.0
+    }
+]
