@@ -4,7 +4,6 @@ from PIL import Image
 import sys
 import os
 
-# Configuración del ejecutable
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 class FacturaOCR:
@@ -18,22 +17,20 @@ class FacturaOCR:
             
         try:
             img = Image.open(ruta_imagen)
-            # 'spa' para español. Asegúrate de haberlo instalado.
+            
             texto = pytesseract.image_to_string(img, lang="spa")
-            return texto.strip() # .strip() quita espacios vacíos innecesarios al inicio/final
+            return texto.strip() 
         except Exception as e:
             return f"Error crítico al procesar la imagen: {e}"
 
 if __name__ == "__main__":
-    # Configuración de logging
     logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
     
-    # Verificamos si el usuario pasó el nombre del archivo
     if len(sys.argv) < 2:
         print("\n[!] Uso correcto: python escaner_proyecto.py nombre_de_la_imagen.jpg")
         print("[?] Ejemplo: python escaner_proyecto.py factura1.jpg\n")
     else:
-        ruta_imagen = sys.argv[1] # Toma el nombre que escribas en la terminal
+        ruta_imagen = sys.argv[1] 
         ocr = FacturaOCR()
         
         print(f"--- Iniciando OCR para: {ruta_imagen} ---")
